@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
+
+            <!-- Welcome Section -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/welcomeCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/welcome_card_gradient"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:contentDescription="AppLogo"
+                        android:src="@drawable/ic_logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Bienvenue sur CatLand"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:alpha="0.9"
+                        android:gravity="center"
+                        android:text="Votre compagnon pour prendre soin de votre chat"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="3dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:alpha="0.8"
+                        android:background="@color/cat_orange" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Menu Principal -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/accent_line_gradient" />
+
+                <TextView
+                    android:id="@+id/menuPrincipalTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Menu Principal"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Grid Menu -->
+            <GridLayout
+                android:id="@+id/mainMenuGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:padding="20dp"
+                android:rowCount="3"
+                android:useDefaultMargins="true">
+
+
+                <!-- Scanner Button -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:id="@+id/btnScanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/menu_button_gradient_2"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/ic_qr_scanner"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Scanner"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.8"
+                            android:gravity="center"
+                            android:text="Puce NFC"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Authentifier Button -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:id="@+id/btnAuthentifier"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/menu_button_gradient_3"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/ic_login"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="S'authentifier"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.8"
+                            android:gravity="center"
+                            android:text="Connexion"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Conseil Santé Button -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:id="@+id/btnConseilSante"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/menu_button_gradient_4"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/ic_health"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Conseil &amp; Santé"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.8"
+                            android:gravity="center"
+                            android:text="Bien-être"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Catégories Button -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:id="@+id/btnCategories"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/menu_button_gradient_5"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/ic_categories"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/cat_gories"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.8"
+                            android:gravity="center"
+                            android:text="@string/races_de_chats"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+            <!-- Maps Button -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/btnFindVets"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/menu_button_gradient_6"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:minHeight="120dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/ic_location"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/location"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

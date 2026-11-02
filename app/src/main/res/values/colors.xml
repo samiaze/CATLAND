@@ -1,0 +1,30 @@
+<resources>
+    <!-- Main Theme Colors -->
+    <color name="dark_purple">#2D1B69</color>
+    <color name="light_purple">#7B68EE</color>
+    <color name="cat_orange">#FF6B35</color>
+    <color name="cat_gold">#FFD700</color>
+    <color name="soft_pink">#FFB6C1</color>
+    <color name="mint_green">#98FB98</color>
+    <color name="sky_blue">#87CEEB</color>
+    <color name="coral">#FF7F50</color>
+
+    <!-- Neutral Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_medium">#CCCCCC</color>
+    <color name="gray_dark">#666666</color>
+
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#667eea</color>
+    <color name="gradient_end">#764ba2</color>
+    <color name="welcome_gradient_start">#ff9a9e</color>
+    <color name="welcome_gradient_end">#fecfef</color>
+
+    <color name="orange_primary">#FF6B35</color>
+    <color name="orange_ripple">#40FF6B35</color>
+    <color name="orange_ripple_light">#20FF6B35</color>
+    <color name="text_primary">#333333</color>
+    <color name="text_secondary">#666666</color>
+</resources>

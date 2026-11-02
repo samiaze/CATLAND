@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tagInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contenu du tag NFC..."
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/welcome_card_gradient"
+            android:padding="20dp"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnWrite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Écrire / Réinitialiser"
+            android:backgroundTint="@color/cat_orange"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mettre à jour"
+            android:backgroundTint="@color/cat_orange"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Supprimer les données"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</RelativeLayout>

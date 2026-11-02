@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scanner une puce NFC"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="center" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:background="@drawable/welcome_card_gradient">
+
+                    <TextView
+                        android:id="@+id/resultText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Scannez une puce pour voir les informations..."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:lineSpacingExtra="4dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

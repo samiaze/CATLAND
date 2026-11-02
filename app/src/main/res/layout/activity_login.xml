@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/welcome_card_gradient"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <ImageView
+                    app:tint="@color/white"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="AppLogo"
+                    android:src="@drawable/ic_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Connexion via OCR"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.9"
+                    android:text="Scannez votre carte d'identité"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- OCR Camera Box -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/camera_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="Camera Icon"
+                    android:src="@android:drawable/ic_menu_camera" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Appuyez pour scanner votre carte"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/takePictureButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/cat_orange"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:text="Prendre une photo"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/cat_orange"
+            android:text="Se connecter"
+            android:textColor="@android:color/white" />
+
+        <!-- Display Scanned Data -->
+        <LinearLayout
+            android:id="@+id/scannedCardDataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#F0F0F0"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="DONNÉES EXTRAITES"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom: "
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/scannedFullNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="CIN: "
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/scannedCinTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

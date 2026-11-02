@@ -1,0 +1,22 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.catland" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Disable ActionBar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Colors -->
+        <item name="colorPrimary">@color/light_purple</item>
+        <item name="colorPrimaryVariant">@color/dark_purple</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="CustomToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">@style/CustomToolbarTitleText</item>
+    </style>
+
+    <style name="CustomToolbarTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

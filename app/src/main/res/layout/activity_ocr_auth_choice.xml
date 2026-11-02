@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".OCRAuthChoiceActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Gradient Background -->
+    <View
+        android:id="@+id/gradientBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background" />
+
+    <!-- Content Container with Card Design -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Welcome Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:alpha="0.95"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="32dp">
+
+                    <!-- Animated Title -->
+                    <TextView
+                        android:id="@+id/titleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:text="Bienvenue sur CatLand"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <!-- Subtitle with Animation -->
+                    <TextView
+                        android:id="@+id/subtitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:alpha="0.8"
+                        android:text="@string/authentification_rapide_et_s_curis_e"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+
+                    <!-- Feature Highlights -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="🔒"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="Sécurisé"
+                                android:textColor="#666666"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="⚡"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="Rapide"
+                                android:textColor="#666666"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="📱"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="OCR"
+                                android:textColor="#666666"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Action Buttons -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- Login Button -->
+                        <Button
+                            android:id="@+id/btnLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:background="@drawable/button_orange"
+                            android:elevation="4dp"
+                            android:text="Se connecter via OCR"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp"
+                            android:textStyle="normal" />
+
+                        <!-- Register Button -->
+                        <Button
+                            android:id="@+id/btnRegister"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/button_outline_orange"
+                            android:text="Créer un compte via OCR"
+                            android:textColor="#FF6B35"
+                            android:textSize="10sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Footer Info -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:alpha="0.7"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ℹ️"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Technologie OCR avancée"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Loading Overlay (Initially Hidden) -->
+    <FrameLayout
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_light"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="#FF6B35" />
+
+    </FrameLayout>
+
+</FrameLayout>

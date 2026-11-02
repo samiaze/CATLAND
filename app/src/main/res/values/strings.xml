@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_title">CatLand</string>
+    <string name="app_subtitle">Your Cat\'s Digital Kingdom</string>
+    <string name="remember_me">Se souvenir de moi</string>
+    <string name="forgot_password">Mot de passe oublié?</string>
+    <string name="no_account">Vous n\'avez pas de compte ? </string>
+    <string name="phone_hint">Numéro de téléphone</string>
+    <string name="confirm_password_hint">Confirmer le mot de passe</string>
+    <string name="ocr_verification">Vérification par OCR</string>
+    <string name="ocr_subtitle">Scannez un document pour vérifier votre identité</string>
+    <string name="scan">Scanner</string>
+    <string name="terms">J\'accepte les conditions d\'utilisation et la politique de confidentialité </string>
+    <string name="register">S\'inscrire</string>
+    <string name="already_account">Vous avez déjà un compte ? </string>
+    <string name="login">Connectez-vous</string>
+    <string name="username_hint">Nom d\'utilisateur</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="CatLand">CatLand</string>
+    <string name="catland_title">CatLand</string>
+    <string name="app_name">CatLand</string>
+    <string name="app_description">your cat\'\s digital kingdom</string>
+    <string name="scanner">Scanner</string>
+    <string name="authentifier">Authentifier</string>
+    <string name="search">Search</string>
+    <string name="ic_home">Home</string>
+    <string name="ic_favorite">Favorites</string>
+    <string name="ic_add">Add</string>
+    <string name="add_cat">Add Cat</string>
+    <string name="ic_help">Help</string>
+    <string name="ic_account">Account</string>
+    <string name="ic_menu">Open menu</string>
+    <string name="races_de_chats">Races de chats</string>
+    <string name="cat_gories">Catégories</string>
+    <string name="location">Vétérinaire à proximité</string>
+    <string name="authentification_rapide_et_s_curis_e">Authentification rapide et sécurisée</string>
+    <string name="mapsApi">AIzaSyCL7R3pB8aAuFh4QX7_Kxr0mZI2lmO8ppQ</string>
+</resources>
